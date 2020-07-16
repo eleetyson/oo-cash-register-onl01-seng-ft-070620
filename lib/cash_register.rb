@@ -8,6 +8,7 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 1)
+    @items = []
     quantity.times do
       @@all << title
     end

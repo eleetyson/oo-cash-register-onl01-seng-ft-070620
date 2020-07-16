@@ -3,6 +3,10 @@ class CashRegister
   attr_accessor :total, :discount
   @@all = []
   
+  def self.all
+    @@all
+  end
+  
   def initialize(discount = 0)
     @total = 0
     @discount = discount
@@ -20,10 +24,6 @@ class CashRegister
   
   def items
     self.all
-  end
-  
-  def self.all
-    @@all
   end
   
 end  

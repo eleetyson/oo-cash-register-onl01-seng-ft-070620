@@ -13,7 +13,6 @@ class CashRegister
     item = self.new
     @title = title
     @price = self.total
-    
     @@items = self
   end
   

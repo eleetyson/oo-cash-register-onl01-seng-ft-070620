@@ -12,6 +12,7 @@ class CashRegister
     i = 0
     until i = quantity
       self.items << title
+      i += 1
     end
     self.total += price * quantity
   end

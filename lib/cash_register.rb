@@ -12,6 +12,7 @@ class CashRegister
     self.total += price * quantity
     item = self.new
     @title = title
+    @price = self.total
     
     @@items = self
   end
